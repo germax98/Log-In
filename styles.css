@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/*-----------Overall-----------*/
+*{
+    margin: 0;
+    padding: 0;
+    
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background-size: 100% 100%;
+    background-image: url(images/three.jpeg);
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+p,a, label{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+br{
+    content: "";
+	display: block;
+	height:15px;
+}
+
+a{
+    align-self: center;
+}
+
+label{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+input{
+    min-width: 295px;
+    height: 50px;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 24px;
+    padding-left: 30px;
+    max-width: 295px;
+}
+
+/*-----------Classes-----------*/
+
+
+.Grid-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+    
+}
+
+.components{
+    width: auto;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.comp{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    
+    display: none;
+    
+}
+
+.big-cont{
+    width: 90%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    
+}
+.comp1 img{
+    width: 50px;
+}
+.comp1{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+/*-----------ID's-----------*/
+ 
+
+
+#Button{
+    min-width: 295px;
+    height: 50px;
+    
+    background-color: rgb(66, 66, 208);
+    color: white;
+    font-size: 20px;
+    border-radius: 24px;
+    display: grid;
+    place-items: center; 
+}
+
+/*-----------Media Querry-----------*/
+
+@media (min-width: 800px){
+    .Grid-container{
+        grid-template-columns: repeat(2,50%);
+        
+    }
+    .logo{
+        color: green;
+        
+        
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+    }
+    .logo img {
+        width: 50%;
+    }
+    .components{
+        padding: 5% 10% 5% 10%;
+        background-color: rgba(255, 255, 255, 0.897);
+    }
+}
+
+/*-----------Animations-----------*/
